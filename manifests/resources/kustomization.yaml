@@ -1,0 +1,4 @@
+resources:
+- kourier.yaml
+- serving-default-domain.yaml
+- eventing.yaml
