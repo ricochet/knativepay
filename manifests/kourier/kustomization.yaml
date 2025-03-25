@@ -1,2 +1,7 @@
 resources:
   - kourier.yaml
+  - namespace.yaml
+
+patchesStrategicMerge:
+  - config-network-patch.yaml
+  - config-domain-patch.yaml

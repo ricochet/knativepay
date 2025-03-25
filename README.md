@@ -44,16 +44,3 @@ Simple hello world applications in Node.js and Go.
 A Proof of Concept for testing Knative's scaling capabilities by deploying 100+ unique validator services.
 
 See [validators/README.md](validators/README.md) for details on how to use the validators POC.
-
-## Notes
-
-```bash
-# Create namespace
-kubectl create ns kourier-system
-
-# Configure domain
-kubectl patch configmap/config-domain \
-  --namespace knative-serving \
-  --type merge \
-  --patch '{"data":{"127.0.0.1.sslip.io":""}}'
-```
