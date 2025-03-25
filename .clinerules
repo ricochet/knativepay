@@ -1,0 +1,11 @@
+# Key Development Guidelines
+
+## Technology Stack
+- TypeScript 5+
+- Golang 1.24.1
+- Postgres for any needed state
+
+## Code Quality
+- Write self-documenting code with meaningful names
+- Document "why" not "what" in comments
+- Write tests for critical paths

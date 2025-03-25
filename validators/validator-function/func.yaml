@@ -1,0 +1,4 @@
+specVersion: 0.36.0
+name: validator
+runtime: go
+created: 2025-03-24T22:40:00.000000-04:00
