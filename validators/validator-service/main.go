@@ -18,9 +18,6 @@ func main() {
 		startTime := time.Now()
 		log.Printf("Received request at validator-%s", validatorID)
 
-		// Simulate some work
-		time.Sleep(100 * time.Millisecond)
-
 		// Return response
 		duration := time.Since(startTime)
 		response := fmt.Sprintf("Validator %s processed request in %v", validatorID, duration)

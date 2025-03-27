@@ -23,12 +23,18 @@ kubectl port-forward service/netdata 19998:19999
 ## Usage
 
 ```bash
-curl -v http://helloworld-nodejs.default.127.0.0.1.sslip.io
-curl -v http://helloworld-go.default.127.0.0.1.sslip.io
+kubectl get ksvc -n default
+
+curl http://helloworld-nodejs.default.127.0.0.1.sslip.io
+
+curl -v http://helloworld-go.default.127.0.0.1.sslip.io -w "\
+DNS Lookup: %{time_namelookup}s\n\
+Connect: %{time_connect}s\n\
+TLS Handshake: %{time_appconnect}s\n\
+TTFB: %{time_starttransfer}s\n\
+Total: %{time_total}s\n"
 
 kubectl top pods -n default
-
-kubectl get ksvc -n default
 
 kubectl get service kourier -n knative-serving
 ```
