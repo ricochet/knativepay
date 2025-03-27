@@ -58,3 +58,4 @@ To build and deploy as a Knative function:
 ```bash
 func build
 func deploy
+```
