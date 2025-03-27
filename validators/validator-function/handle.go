@@ -71,9 +71,6 @@ func Handle(w http.ResponseWriter, r *http.Request) {
 		message = "Currency is required"
 	}
 
-	// Simulate some processing time
-	time.Sleep(100 * time.Millisecond)
-
 	// Create response
 	duration := time.Since(startTime)
 	resp := ValidationResponse{
