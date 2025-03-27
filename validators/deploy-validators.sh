@@ -1,5 +1,4 @@
 #!/bin/bash
-
 # Create namespace
 kubectl create ns validators
 

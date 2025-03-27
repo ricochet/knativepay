@@ -45,7 +45,7 @@ The objective of this POC is to evaluate platform scaling capabilities and behav
 
 2. **Generate validator YAML files**:
    ```bash
-   ./generate_validators.py
+   ./generate-validators.sh
    ```
 
 3. **Deploy validators**:

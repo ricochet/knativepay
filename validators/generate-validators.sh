@@ -16,7 +16,7 @@ TEMPLATE=$(cat "$TEMPLATE_FILE")
 # Generate validator files
 for i in $(seq 0 $((NUMBER_OF_VALIDATORS-1))); do
     # Replace ${UNIQUE_ID} with the current index
-    CONTENT="${TEMPLATE//\${UNIQUE_ID}/$i}"
+    CONTENT="${TEMPLATE//\$\{UNIQUE_ID\}/$i}"
     
     # Write to file
     echo "$CONTENT" > "generated/validator-$i.yaml"
