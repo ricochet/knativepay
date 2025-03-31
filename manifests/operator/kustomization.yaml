@@ -1,6 +1,5 @@
 resources:
 - knative-operator.yaml
-- serving.yaml
 - https://github.com/kubernetes-sigs/metrics-server/releases/download/v0.6.1/components.yaml
 
 apiVersion: kustomize.config.k8s.io/v1beta1

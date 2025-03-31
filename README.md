@@ -14,6 +14,12 @@
 ./scripts/dev-setup.sh
 ```
 
+Cleanup:
+
+```bash
+kind delete cluster
+```
+
 ## Port-forwards
 
 ```bash

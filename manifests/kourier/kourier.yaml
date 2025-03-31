@@ -418,28 +418,6 @@ spec:
 apiVersion: v1
 kind: Service
 metadata:
-  name: kourier
-  namespace: kourier-system
-  labels:
-    networking.knative.dev/ingress-provider: kourier
-    serving.knative.dev/release: "v1.0.0"
-spec:
-  ports:
-    - name: http2
-      port: 80
-      protocol: TCP
-      targetPort: 8080
-    - name: https
-      port: 443
-      protocol: TCP
-      targetPort: 8443
-  selector:
-    app: 3scale-kourier-gateway
-  type: LoadBalancer
----
-apiVersion: v1
-kind: Service
-metadata:
   name: kourier-internal
   namespace: kourier-system
   labels:

@@ -4,7 +4,6 @@ metadata:
   name: knative-serving
   namespace: knative-serving
 spec:
-  # ...
   ingress:
     kourier:
       enabled: true
